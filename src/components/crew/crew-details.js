@@ -1,10 +1,10 @@
-import lexieImg from "@/assets/images/crew/Lexie.jpg";
-import rajImg from "@/assets/images/crew/Raj.jpg";
-import samImg from "@/assets/images/crew/Sam.jpg";
-import sofiaImg from "@/assets/images/crew/Sofia.jpg";
-import takalaImg from "@/assets/images/crew/Takala.jpg";
-import tinyImg from "@/assets/images/crew/Tiny.jpg";
-import sadieImg from "@/assets/images/crew/SADIE.jpg";
+import lexieImg from "@/assets/images/crew/lexie.jpg";
+import rajImg from "@/assets/images/crew/raj.jpg";
+import samImg from "@/assets/images/crew/sam.jpg";
+import sofiaImg from "@/assets/images/crew/sofia.jpg";
+import takalaImg from "@/assets/images/crew/takala.jpg";
+import tinyImg from "@/assets/images/crew/tiny.jpg";
+import sadieImg from "@/assets/images/crew/sadie.jpg";
 
 import lexieHero from "@/assets/images/crew/lexiehero.jpg";
 import rajHero from "@/assets/images/crew/rajhero.jpg";

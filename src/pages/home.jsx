@@ -1,4 +1,3 @@
-import { Container } from "@/components/container";
 import BentoSection from "@/components/home/bento-section";
 import { ContactSection } from "@/components/home/contact-section";
 import { Testimonials } from "@/components/testimonials";
