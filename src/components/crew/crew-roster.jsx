@@ -164,7 +164,7 @@ function SadieRevealCard({ member, isRevealed }) {
 		>
 			<Link
 				to={`/crew/${member.slug}`}
-				className="group relative flex flex-col lg:flex-row overflow-hidden rounded-2xl bg-gradient-to-br from-purple-950 via-indigo-950 to-blue-950 ring-1 ring-white/10 shadow-2xl transition-all hover:ring-white/20"
+				className="group relative flex flex-col lg:flex-row overflow-hidden rounded-2xl bg-linear-to-br from-purple-950 via-indigo-950 to-blue-950 ring-1 ring-white/10 shadow-2xl transition-all hover:ring-white/20"
 			>
 				{/* Portrait Section - Takes up left side on desktop */}
 				<div className="relative h-96 lg:h-auto lg:w-2/5 shrink-0 overflow-hidden">
@@ -175,7 +175,7 @@ function SadieRevealCard({ member, isRevealed }) {
 					/>
 
 					{/* Gradient overlay */}
-					<div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-purple-950/80 lg:to-purple-950" />
+					<div className="absolute inset-0 bg-linear-to-r from-transparent via-transparent to-purple-950/80 lg:to-purple-950" />
 
 					{/* Status badge */}
 					<div className="absolute top-4 right-4">
@@ -278,7 +278,12 @@ export function CrewRoster({ readerMode, className }) {
 
 	// Mark initial render as complete
 	useEffect(() => {
-		setIsInitialRender(false);
+		// Utiliser setTimeout pour éviter l'update synchrone
+		const timer = setTimeout(() => {
+			setIsInitialRender(false);
+		}, 0);
+
+		return () => clearTimeout(timer);
 	}, []);
 
 	// ========================================================================
