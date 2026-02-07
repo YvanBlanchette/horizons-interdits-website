@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
@@ -25,11 +25,23 @@ jobs:
 
       - name: Deploy to separate branch
         run: |
+          # Sauvegarder le contenu de dist temporairement
+          cp -r dist /tmp/dist-backup
+
+          # Configurer Git
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
+
+          # Créer/basculer sur la branche deploy
           git checkout --orphan deploy
+
+          # Supprimer tout
           git rm -rf .
-          cp -r dist/* .
+
+          # Copier le contenu sauvegardé
+          cp -r /tmp/dist-backup/* .
+
+          # Commit et push
           git add .
           git commit -m "Deploy build"
           git push -f origin deploy
