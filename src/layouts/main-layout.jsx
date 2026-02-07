@@ -1,4 +1,4 @@
-import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/footer";
 import Hero from "@/components/hero-section";
 import { LogoCloud } from "@/components/logo-cloud";
 import { Container } from "@/components/container";
