@@ -10,12 +10,4 @@ export default defineConfig({
 			"@": path.resolve("src"),
 		},
 	},
-	optimizeDeps: {
-		include: ["framer-motion"],
-	},
-	build: {
-		commonjsOptions: {
-			include: [/node_modules/],
-		},
-	},
 });
