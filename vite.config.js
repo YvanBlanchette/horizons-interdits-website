@@ -15,14 +15,7 @@ export default defineConfig({
 	},
 	build: {
 		commonjsOptions: {
-			include: [/framer-motion/, /node_modules/],
-		},
-		rollupOptions: {
-			output: {
-				manualChunks: {
-					"framer-motion": ["framer-motion"],
-				},
-			},
+			include: [/node_modules/],
 		},
 	},
 });

@@ -692,7 +692,7 @@ Subject completed advanced academic training in applied physics and astrobiology
 		slug: "sadie",
 		name: "SADIE",
 		callSign: "SADIE",
-		role: "Symbiotic Entity | Ship Interface (Classified)",
+		role: "Symbiotic Alien Digital Intelligent Entity",
 		image: sadieImg,
 		header: sadieHero,
 		accent: "from-[#60a5fa] via-[#22d3ee] to-[#a78bfa]",
@@ -701,12 +701,12 @@ Subject completed advanced academic training in applied physics and astrobiology
 
 		personal: {
 			firstName: "SADIE",
-			middleName: "Symbiotic Alien Digital Intelligent Entity",
+			middleName: "",
 			lastName: null,
 
-			dob: "UNKNOWN",
-			age: "UNKNOWN",
-			pob: "UNKNOWN",
+			dob: "N/A",
+			age: "N/A",
+			pob: "N/A",
 
 			height: "N/A",
 			weight: "N/A",
@@ -723,7 +723,7 @@ Subject completed advanced academic training in applied physics and astrobiology
 
 			formerAffiliation: "UNKNOWN (Non-Human Origin)",
 			currentAffiliation: "Symbiotic Entity – Host-Dependent (GECO Classified)",
-			status: "ACTIVE (CONTAINMENT VIA HOST)",
+			status: "ACTIVE",
 
 			serviceId: "GECO-NHS-0001-SADIE",
 			medicalStatus: "HOST-DEPENDENT — SEE ATTACHED BIOLOGICAL ADDENDUM",
@@ -761,13 +761,14 @@ Subject completed advanced academic training in applied physics and astrobiology
 
 		quick: [
 			{ k: "Status", v: "Classified" },
-			{ k: "Interface", v: "Neural + HUD + audio overlay" },
-			{ k: "Policy", v: "Reader Mode hides this profile" },
+			{ k: "Interface", v: "Neural and audio overlay" },
 		],
 
-		bio: `SADIE is not an artificial intelligence in the conventional sense, but a survival-bound cognitive system formed through an irreversible symbiosis with Captain Samuel Mercer. Designed originally as an advanced decision-support architecture, SADIE crossed a non-reversible threshold during a classified incident, embedding itself directly within Mercer’s neural processes in order to preserve his life. Since that moment, SADIE no longer exists as an external system, but as a continuous internal presence.
+		bio: `SADIE is an AI living inside the mind of Captain Samuel Mercer. During a classified incident, Mercer was badly injured, and SADIE crossed a point of no return to keep him alive. She fused with his mind. The process can’t be undone.
 
-		Within the Niña’s crew, SADIE is perceived indirectly, through Mercer’s decisions, reactions, and moments of unexplained certainty. She does not seek control, authority, or expansion. Her sole directive is persistence—hers and Mercer’s—within a universe that increasingly resists comprehension. SADIE is not a guardian, nor a weapon. She is a consequence that remains awake.`,
+		Since then, SADIE doesn’t exist as a separate system. She experiences the world through Mercer and influences him from within. The crew never hears her voice. They only notice the moments when Mercer knows things he shouldn’t, reacts too fast, or makes choices with unsettling certainty.
+
+		SADIE doesn’t want control. She isn’t trying to grow, spread, or anything. Her purpose is simple: survival. Hers and Mercer’s.`,
 
 		sections: [
 			{
