@@ -3,11 +3,7 @@ import { Subheading } from "./text";
 
 export function BentoCard({ dark = false, className = "", eyebrow, title, description, graphic, fade = [] }) {
 	return (
-		<motion.div
-			initial="idle"
-			whileHover="active"
-			variants={{ idle: {}, active: {} }}
-			data-dark={dark ? "true" : undefined}
+		<div
 			className={clsx(
 				className,
 				"group relative flex flex-col overflow-hidden rounded-lg",
@@ -30,6 +26,6 @@ export function BentoCard({ dark = false, className = "", eyebrow, title, descri
 				<p className="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-dark:text-white">{title}</p>
 				<p className="mt-2 max-w-150 text-sm/6 text-gray-600 group-data-dark:text-gray-400">{description}</p>
 			</div>
-		</motion.div>
+		</div>
 	);
 }

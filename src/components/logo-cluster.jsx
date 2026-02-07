@@ -1,61 +1,4 @@
-import { clsx } from "clsx";
-import { motion } from "framer-motion";
 import { Mark } from "./logo";
-
-function Circle({ size, delay, opacity }) {
-	return (
-		<motion.div
-			variants={{
-				idle: { width: `${size}px`, height: `${size}px` },
-				active: {
-					width: [`${size}px`, `${size + 10}px`, `${size}px`],
-					height: [`${size}px`, `${size + 10}px`, `${size}px`],
-					transition: {
-						duration: 0.75,
-						repeat: Infinity,
-						repeatDelay: 1.25,
-						ease: "easeInOut",
-						delay,
-					},
-				},
-			}}
-			style={{ "--opacity": opacity }}
-			className={clsx(
-				"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full",
-				"bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,var(--color-blue-500)_var(--opacity),transparent)_100%)]",
-				"ring-1 ring-blue-500/8 ring-inset",
-			)}
-		/>
-	);
-}
-
-function Circles() {
-	return (
-		<div className="absolute inset-0">
-			<Circle
-				size={528}
-				opacity="3%"
-				delay={0.45}
-			/>
-			<Circle
-				size={400}
-				opacity="5%"
-				delay={0.3}
-			/>
-			<Circle
-				size={272}
-				opacity="5%"
-				delay={0.15}
-			/>
-			<Circle
-				size={144}
-				opacity="10%"
-				delay={0}
-			/>
-			<div className="absolute inset-0 bg-linear-to-t from-white to-35%" />
-		</div>
-	);
-}
 
 function MainLogo() {
 	return (
@@ -65,27 +8,11 @@ function MainLogo() {
 	);
 }
 
-function Logo({ src, left, top, hover }) {
+function Logo({ src }) {
 	return (
-		<motion.img
-			variants={{
-				idle: { x: 0, y: 0, rotate: 0 },
-				active: {
-					x: [0, hover.x, 0],
-					y: [0, hover.y, 0],
-					rotate: [0, hover.rotate, 0],
-					transition: {
-						duration: 0.75,
-						repeat: Infinity,
-						repeatDelay: 1.25,
-						ease: "easeInOut",
-						delay: hover.delay,
-					},
-				},
-			}}
+		<img
 			alt=""
 			src={src}
-			style={{ left, top }}
 			className="absolute size-16 rounded-full bg-white shadow-sm ring-1 ring-black/5"
 		/>
 	);

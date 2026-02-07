@@ -3,7 +3,6 @@ import logo from "@/assets/images/nebulae-logo.svg";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars2Icon } from "@heroicons/react/24/solid";
 import { PlusGridItem } from "./plus-grid";
-import { motion } from "framer-motion";
 
 const links = [
 	{ href: "/construction", label: "Shop" },
@@ -47,24 +46,15 @@ function MobileNav() {
 	return (
 		<DisclosurePanel className="lg:hidden">
 			<div className="flex flex-col gap-5 py-5">
-				{links.map(({ href, label }, linkIndex) => (
-					<motion.div
-						initial={{ opacity: 0, rotateX: -90 }}
-						animate={{ opacity: 1, rotateX: 0 }}
-						transition={{
-							duration: 0.15,
-							ease: "easeInOut",
-							rotateX: { duration: 0.3, delay: linkIndex * 0.07 },
-						}}
-						key={href}
-					>
+				{links.map(({ href, label }) => (
+					<div key={href}>
 						<Link
 							to={href}
 							className="nav-link-hud inline-flex w-full items-center rounded-xl px-3 py-2 text-base font-medium text-gray-50/90 data-hover:bg-white/5 data-hover:text-white"
 						>
 							{label}
 						</Link>
-					</motion.div>
+					</div>
 				))}
 			</div>
 
