@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useParams } from "react-router-dom";
 import { useMemo, useState } from "react";
 
-import { Button } from "@/components/button";
 import CrewDetails from "@/components/crew/crew-details";
 import { Link } from "react-router-dom";
 
