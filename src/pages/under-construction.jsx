@@ -34,6 +34,9 @@ export default function UnderConstructionPage() {
 			heroText={heroData.text}
 			heroCta={heroData.cta}
 			heroBg={constructionBg}
+			ctaHref="/"
+			logoCloud={false}
+			fullScreen={true}
 		>
 			<Container>
 				{/* Main construction message */}

@@ -3,7 +3,7 @@ import Hero from "@/components/hero-section";
 import { LogoCloud } from "@/components/logo-cloud";
 import { Container } from "@/components/container";
 
-function MainLayout({ children, heroTitle, heroSubtitle, heroText, heroCta, heroBg }) {
+function MainLayout({ children, heroTitle, heroSubtitle, heroText, heroCta, heroBg, ctaLink, logoCloud, fullScreen }) {
 	return (
 		<div className="main-layout">
 			<Hero
@@ -12,9 +12,11 @@ function MainLayout({ children, heroTitle, heroSubtitle, heroText, heroCta, hero
 				text={heroText}
 				cta={heroCta}
 				bg={heroBg}
+				href={ctaLink}
+				fullScreen={fullScreen}
 			/>
 			<Container className="bg-linear-to-br from-gray-50 from-50% to-gray-100">
-				<LogoCloud />
+				{logoCloud && <LogoCloud />}
 				<main className="py-[10vh] overflow-hidden ">{children}</main>
 			</Container>
 			<Footer />

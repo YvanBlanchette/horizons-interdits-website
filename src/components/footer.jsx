@@ -1,4 +1,4 @@
-import logo from "@/assets/images/nebulae-logo.svg";
+import logo from "@/assets/images/bhi-logo-light.svg";
 import { Container } from "./container";
 import { Link } from "react-router-dom";
 
@@ -136,7 +136,7 @@ export function Footer() {
 							<img
 								src={logo}
 								alt="Nebulae Publishings"
-								className="h-8 w-auto"
+								className="h-18 w-auto"
 							/>
 						</div>
 

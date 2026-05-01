@@ -204,6 +204,9 @@ export default function CrewPage() {
 			heroText={heroData.text}
 			heroCta={heroData.cta}
 			heroBg={crewBg}
+			ctaHref="#crew"
+			logoCloud={false}
+			fullScreen={true}
 		>
 			<Container>
 				{/* Page header with spoiler guard */}

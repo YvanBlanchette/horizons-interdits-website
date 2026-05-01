@@ -408,6 +408,9 @@ export default function CrewMemberDetailPage() {
 			heroText={member?.logline}
 			heroCta="CLASSIFIED INFORMATIONS"
 			heroBg={crewHeader}
+			ctaHref="#crew"
+			logoCloud={false}
+			fullScreen={true}
 		>
 			{/* Page title */}
 			{member && <h1 className="font-display mb-8 text-center text-4xl font-semibold sm:text-6xl lg:text-6xl">{member.name}</h1>}
@@ -443,7 +446,10 @@ export default function CrewMemberDetailPage() {
 				</div>
 			) : (
 				/* Main content: two-column layout with personal info and bio */
-				<div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10 items-stretch">
+				<div
+					id="crew"
+					className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10 items-stretch"
+				>
 					{/* ============================================================ */}
 					{/* LEFT COLUMN: Image and personal information */}
 					{/* ============================================================ */}

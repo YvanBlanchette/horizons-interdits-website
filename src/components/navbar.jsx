@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/images/nebulae-logo.svg";
+import logo from "@/assets/images/bhi-logo-light.svg";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Bars2Icon } from "@heroicons/react/24/solid";
 import { PlusGridItem } from "./plus-grid";
@@ -21,7 +21,7 @@ function DesktopNav() {
 				>
 					<Link
 						to={href}
-						className="flex w-full items-center rounded-xl px-4 py-2.5 text-base font-medium text-gray-50/90 hover:bg-white/10 transition duration-300 ease-in-out"
+						className="flex w-full items-center rounded-xl px-4 py-2.5 text-lg tracking-widest font-medium text-gray-50/90 hover:bg-white/10 transition duration-300 ease-in-out"
 					>
 						{label}
 					</Link>
@@ -71,7 +71,7 @@ export function Navbar({ banner }) {
 	return (
 		<Disclosure
 			as="header"
-			className="nav-glass relative z-50 flex items-center justify-between px-10 pt-5 pb-4"
+			className="nav-glass relative z-50 flex items-center justify-between px-10 pt-5 pb-4  rounded-b-3xl"
 		>
 			{/* subtle top specular highlight */}
 			<div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-white/25 to-transparent" />
@@ -86,8 +86,8 @@ export function Navbar({ banner }) {
 			>
 				<img
 					src={logo}
-					alt="Nebulae Publishings"
-					className="h-8 w-auto"
+					alt="Broken Horizons Interdits"
+					className="h-16 w-auto max-w-full sm:h-12 lg:h-16"
 				/>
 			</Link>
 

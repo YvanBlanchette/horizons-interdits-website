@@ -25,6 +25,9 @@ export default function Home() {
 			heroText={heroData.text}
 			heroCta={heroData.cta}
 			heroBg={heroBg}
+			ctaHref="#"
+			logoCloud={true}
+			fullScreen={false}
 		>
 			<div className="pb-32">
 				<AuthorSection />

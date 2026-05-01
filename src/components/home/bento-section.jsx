@@ -59,7 +59,7 @@ function BentoSection() {
 
 							{/* Click layer on top */}
 							<Link
-								to="/construction"
+								to="/universe"
 								className="absolute inset-0 z-20 cursor-pointer"
 								aria-label="Go deeper than the story"
 							/>
